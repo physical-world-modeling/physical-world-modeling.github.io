@@ -89,6 +89,24 @@
     .card-content.has-text-centered .image.is-128x128 {
       margin: 0 auto;
     }
+
+    /* Mobile responsiveness for speaker cards */
+    @media screen and (max-width: 768px) {
+      .columns.is-vcentered {
+        display: block;
+      }
+      .columns.is-vcentered .column {
+        text-align: center;
+        width: 100%;
+      }
+      .columns.is-vcentered .column.is-one-quarter {
+        margin: 0 auto;
+        max-width: 200px;
+      }
+      .columns.is-vcentered .column .image.is-128x128 {
+        margin: 0 auto 1rem auto;
+      }
+    }
   </style>
 </head>
 
@@ -233,7 +251,7 @@
 
             <div class="card">
               <div class="card-content">
-                <div class="columns is-vcentered">
+                <div class="columns is-vcentered is-mobile">
                   <div class="column is-one-quarter">
                     <figure class="image is-128x128">
                       <img class="is-rounded" src="data/images/people/agrim.jpg" alt="Agrim Gupta">
@@ -249,7 +267,7 @@
 
             <div class="card">
               <div class="card-content">
-                <div class="columns is-vcentered">
+                <div class="columns is-vcentered is-mobile">
                   <div class="column is-one-quarter">
                     <figure class="image is-128x128">
                       <img class="is-rounded" src="data/images/people/shuran.jpg" alt="Shuran Song">
@@ -265,7 +283,7 @@
 
             <div class="card">
               <div class="card-content">
-                <div class="columns is-vcentered">
+                <div class="columns is-vcentered is-mobile">
                   <div class="column is-one-quarter">
                     <figure class="image is-128x128">
                       <img class="is-rounded" src="data/images/people/hao.jpg" alt="Hao Su">
@@ -281,7 +299,7 @@
 
             <div class="card">
               <div class="card-content">
-                <div class="columns is-vcentered">
+                <div class="columns is-vcentered is-mobile">
                   <div class="column is-one-quarter">
                     <figure class="image is-128x128">
                       <img class="is-rounded" src="data/images/people/beom.jpg" alt="Beom Joon Kim">
